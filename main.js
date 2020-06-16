@@ -25,3 +25,17 @@ function insert(arr) {
     }
     return arr
 }
+
+// QUICK SORT
+
+function quickSort(arr){
+    if(arr.length < 2) return arr
+
+    let pivot = arr.pop()
+    let [left, right] = [[],[]]
+
+    arr.forEach(e => e >= pivot ? right.push(e) : left.push(e))
+
+    return [...quickSort(left), pivot, ...quickSort(right)]
+}
+
