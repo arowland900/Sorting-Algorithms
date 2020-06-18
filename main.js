@@ -1,6 +1,6 @@
 // BUBBLE SORT
 
-function bub(arr) {
+function bubbleSort(arr) {
     for (var i = 0; i < arr.length; i++) {
         for (var j = 0; j < arr.length - i; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -15,7 +15,7 @@ function bub(arr) {
 
 // INSERTION SORT
 
-function insert(arr) {
+function insertionSort(arr) {
     for (var i = 1; i < arr.length; i++) {
         for (var j = i - 1; j > -1; j--) {
             var tmp = arr[j + 1]
@@ -38,4 +38,6 @@ function quickSort(arr){
 
     return [...quickSort(left), pivot, ...quickSort(right)]
 }
+
+// MERGE SORT
 
