@@ -41,3 +41,11 @@ function quickSort(arr){
 
 // MERGE SORT
 
+function mergeSort(arr){
+    if(arr.length < 2) return arr
+
+}
+
+function helper(left,right){
+    
+}
